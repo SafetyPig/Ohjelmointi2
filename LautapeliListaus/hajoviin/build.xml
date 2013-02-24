@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project LautapeliListaus">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <target name="create_run_jar">
+        <jar destfile="C:/Users/Hannu/kurssit/LautapeliListaus/hajoviin/LautapeliListaus.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="ikkunatGUI.Profiili"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="C:/Users/Hannu/kurssit/LautapeliListaus/hajoviin/bin"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Hannu/Documents/JavaKirjastot/Ali.jar"/>
+            <fileset dir="C:/Users/Hannu/Documents/JavaKirjastot"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Hannu/Documents/JavaKirjastot/Graphics.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Hannu/Documents/JavaKirjastot/lift.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Hannu/Documents/JavaKirjastot/gui.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Hannu/eclipse/plugins/org.junit_4.8.2.v4_8_2_v20110321-1705/junit.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Hannu/eclipse/plugins/org.hamcrest.core_1.1.0.v20090501071000.jar"/>
+        </jar>
+    </target>
+</project>

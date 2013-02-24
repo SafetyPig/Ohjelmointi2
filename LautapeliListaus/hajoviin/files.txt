@@ -1,0 +1,81 @@
+!https://trac.cc.jyu.fi/projects/ohj2k12/wiki/suunnitelmat/hajoviin = Suunnitelma Wikiss‰
+
+!https://svn.cc.jyu.fi/srv/svn/ohj2k12/hajoviin/ = Suunitelma version hallinnassa
+
+
+= <h3>Ohjelman ikkunoiden java tiedostot</h3>
+src/ikkunatGUI/Alkuikkuna.java = Alkuikkunan java tiedosto
+src/ikkunatGUI/KayttajanLuonti.java = src/luonti/K‰ytt‰j‰n luomisen java tiedosto
+src/ikkunatGUI/PelinLisaaminen.java = Pelin lis‰‰misen java tiedosto
+src/ikkunatGUI/TapahtumanLuonti.java = Tapahtuman luomisen java tiedosto
+src/ikkunatGUI/Profiili.java = Profiili-ikkunan java tiedosto
+src/ikkunatGUI/TapahtumaGUI.java = Tapahtumaikkunan java tiedosto
+
+= <h3>Ohjelman kuvat WindowBuilderill‰</h3>
+kuvat/paaikkuna.png = ohjelman p‰‰ikkunan 
+kuvat/henkilovirhe.png = ohjelman virheikkuna
+kuvat/alku.png = ohjelman alkuikkuna
+kuvat/profiili.png = ohjelman profiili
+kuvat/tapahtumanluonti.png = ohjelman tapahtumanluonti
+kuvat/tapahtumavirhe.png = ohjelman virhe tapahtumassa
+kuvat/uusi.png = ohjelman uusi k‰ytt‰j‰
+kuvat/uusipeli.png = ohjelman uuden pelin luonti
+
+
+= <h3>Ajettava ohjelma</h3>
+LautapeliListaus.jar = Ajettava ohjelma
+
+= <h3>Tietorakenne ja CRC-kortit</h3>
+kuvat/tietorakenne.jpg = Kuva tietorakenteesta
+!https://trac.cc.jyu.fi/projects/ohj2k12/wiki/suunnitelmat/hajoviinCRC = CRC-korttien suunnitelma
+
+= <h3>K‰yttˆliittym‰luokka Swing-kirjastolle</h3>
+src/listausSwing/ListausSwing.java = luokka, joka asettaa tiedot oikeisiin kohtiin ja pyˆritt‰‰ itse ohjelman toimintaa.
+
+= <h3>Tietorakenteen k‰sittely koodissa</h3>
+
+src/rekisterit/OmaException.java = Virheiden k‰sittely tietorakenteissa
+
+src/tiedot/Tietue.java = Yleinen tietue luokka, josta voidaan peri‰ tietueiden ominaisuudet
+src/tiedot/Lautapeli.java = Lautapeli, joka huolehtii omista tiedoistaan
+src/tiedot/Pelaaja.java = Pelaaja, joka osaa huolehtia itsest‰‰n
+src/tiedot/Tapahtuma.java = Tapahtuma, joka osaa huolehtia itsest‰‰n
+src/tiedot/PelaajanPeli.java = Luokka, joka pit‰‰ tiedon siit‰, mit‰ pelej‰ pelaa omistaa
+src/tiedot/TapahtumanPelaajaJaPeli.java = Luokka, joka pit‰‰ huolta siit‰, mit‰ pelaajia ja pelej‰ on miss‰kin tapahtumassa
+src/tiedot/Kentta.java = Kentta rajapinta
+src/tiedot/NormiKentta.java = Yleiskentt‰ luokka, josta voidaan peri‰ kenttien perusominaisuudet
+src/tiedot/JonoKentta.java = Kentt‰, johon voi syˆtt‰‰ merkkijonon
+src/tiedot/IntKentta.java = Kentt‰, johon voi laittaa kokonaisluvun
+src/rekisterit/Lautapelit.java = Lautapelien k‰sittely
+src/rekisterit/PelaajanPelit.java = Pelaajien ja heid‰n peliens‰ k‰sittely
+src/rekisterit/Pelaajat.java = Pelaajien k‰sittely
+src/rekisterit/Tapahtumat.java = Tapahtumien k‰sittely
+src/rekisterit/TapahtumienPelaajatJaPelit.java = Tapahtumissa olevien pelaajien ja heid‰n peliens‰ hallinta
+
+src/rekisterit/Pelaajat.java = Pelaajien hallinta
+src/rekisterit/Tapahtumat.java = Tapahtumien hallinta
+src/rekisterit/Lautapelit.java = Lautapelien hallinta
+src/rekisterit/PelaajanPelit.java = luokka, joka hallitsee pelaajien pelej‰
+src/rekisterit/TapahtumienPelaajatJaPelit = Luokka, joka hallitsee tapahtumien pelaajia ja pelej‰
+
+src/lautapelilistaus/Lautapelilistaus.java = luokka, joka pit‰‰ huolta muiden luokkien yhteistyˆst‰
+
+= <h3>Tarkastajat & vertailija</h3> 
+src/tiedot/Tarkastaja.java = Tarkastaja rajapinta
+src/tiedot/MerkkiTarkastaja.java = Tarkastaja, jolla voidaan tuoda tieto hyv‰sksytyist‰ merkeist‰
+src/tiedot/Vertailija.java = Oma vertailija, jolla saadaan vertailua eri kenttien perusteella
+
+= <h3>Ohjelman esisuunnitemla</h3>
+kuvat/paaikkunaesi.png = ohjelman p‰‰ikkunan 
+kuvat/henkilovirheesi.png = ohjelman virheikkuna
+kuvat/alkuesi.png = ohjelman alkuikkuna
+kuvat/profiiliesi.png = ohjelman profiili
+kuvat/tapahtumanluontiesi.png = ohjelman tapahtumanluonti
+kuvat/tapahtumavirheesi.png = ohjelman virhe tapahtumassa
+kuvat/uusiesi.png = ohjelman uusi k‰ytt‰j‰
+kuvat/uusiPeliesi.png = ohjelman uuden pelin luonti
+
+= <h3> Muita tiedostoja </h3>
+build.xml = Ant-skript tekee .jar:in
+.project = Eclipsen projekti
+.classpath = Eclipsen luokkapolku
